@@ -1,0 +1,90 @@
+@charset "utf-8";
+a:link,a:active,a:visited{
+	text-decoration: none;
+	color: black;
+
+}
+a:hover{
+	color: black;
+}
+/*设置提示部分*/
+
+.aside{
+	width: 10px;
+	height: 200px;
+	position: fixed;
+	right: 0px;
+	top: 200px;	
+	background-color: gray;
+	z-index: 99999;
+}
+.aside-content{
+	visibility: hidden;
+	display: inline-block;
+	position: absolute;
+}
+.aside:hover .aside-content{
+	display: inline-block;
+	position: absolute;
+	visibility: visible;
+}
+
+.people,.one{
+	width: 50px;
+	height:30px;
+}
+.people{
+	padding-bottom: 7px;
+	background-color: gray;
+	display: inline-block;
+	width: 60px;
+}
+.people img{
+	transform: translate(-20px);
+	transition: transform 2s;
+	position: absolute;
+	z-index: 2;
+	background-color: gray;
+	display: inline-block;
+	height:30px;
+	padding-right: 30px;
+	/*border: 1px solid red;*/
+}
+ .aside .aside-content .one{
+    width: 70px;
+    height: 30px;
+    visibility: hidden;
+	transition: transform 2s;
+}
+.one a{
+	display: inline-block;
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;   
+    right: 60px;
+    background-color: red;
+    color: #fff;
+}
+.people:hover .one{
+	visibility: visible;
+	transform: translate(-30px);
+	transition: transform 2s;
+	position: absolute;
+	z-index: 1;
+}
+.people:hover img{
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
